@@ -1,0 +1,53 @@
+# variable 변수
+a = 3
+a = 4
+
+# 정수, int
+b = 6
+print(type(b))
+
+# str, 문자, "1233", '1233'
+c = 'wow'
+print(c, type(c))
+
+# 3.1 , 3.3 float
+d = 3.1
+print(d, type(d))
+
+# 사칙연산, +, -, *, /, %
+# + (더하기)
+# - (빼기)
+# * (곱하기)
+# / (몫)
+# % (나머지)
+
+# if문
+# == (같다), != (다르다)
+e = 3
+if e != 5:
+    print('true')
+
+# type change
+
+# num = int(input())
+# print(num)
+
+# 숫자를 입력 받을건데 이게 짝수면
+# even 출력, 홀수면 odd 를 입력
+
+# num = int(input())
+# f = num % 2
+# if f == 1:
+#     print('odd')
+#
+# else:
+#     print('even')
+
+# elif
+# else 는 elif 또는 if가 조건에 만족못하면 사용
+
+# 별 피라미드 만들기
+for i in range(11):
+    print('*'*i)
+for i in range(11):
+    print('*'* (8-i))
