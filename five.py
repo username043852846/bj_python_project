@@ -1,0 +1,57 @@
+# id = []
+# pwd = []
+# for i in range(5):
+#     a = input()
+#     id.append(a)
+
+# server, client
+
+#id 중복제거
+#id 8
+#pwd !,@,#
+
+
+# id_list = []
+# pwd_list = []
+
+# for i in range(5):
+#     b = input()
+#     pwd.append(b)
+#
+# print(id, pwd)
+
+
+id_list = []
+pwd_list = []
+for i in range(5):
+    temp_id = input("enter the your id :")
+    for i in range(len(id_list)):
+        if id_list[i] == temp_id:
+            print('입력된 id가 중복되었습니다 다시 입력해주세요')
+            i = i-1
+            continue
+    id_list.append(temp_id)
+    temp_pwd = input("enter the your pwd :")
+    pwd_list.append(temp_pwd)
+
+print(id_list, pwd_list)
+#     temp_id = input('enter your id')
+#     for i in range(len(id_list)):
+
+# print('{} x {} = {}'.format(1, 2, 3))
+
+# for i in range(1, 10):
+#     for j in range(1, 10):
+#         print('{} x {} = {}'.format(i, j, i*j))
+
+import random
+a = []
+for i in range(100):
+    b = random.randrange(1, 6)
+    a.append(b)
+
+count_list = [0,0,0,0,0]
+for i in range(len(a)):
+    num = a[i] -1
+    count_list[num] +=1
+print(count_list)
